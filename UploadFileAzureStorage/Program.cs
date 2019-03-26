@@ -19,7 +19,7 @@ namespace UploadFileAzureStorage
             {
                 Console.WriteLine("Usage UploadFileAzureStorage.exe file_path container_name storage_account_name storage_account_access_key" +
                     "\nExample:" +
-                    "\nC:\\Users\\test-user\\Downloads\\test-file.zip test-container test-storage-account XXXXXXXXXXXXXXXXXXXX");
+                    "\nUploadFileAzureStorage.exe C:\\Users\\test-user\\Downloads\\test-file.zip test-container test-storage-account XXXXXXXXXXXXXXXXXXXX");
                 return;
             }
 

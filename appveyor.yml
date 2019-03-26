@@ -1,0 +1,13 @@
+skip_tags: true
+image: Visual Studio 2017
+configuration: Release
+before_build:
+- cmd: nuget restore
+build:
+  verbosity: minimal
+artifacts:
+- path: UploadFileAzureStorage\bin\$(configuration)
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: ZYmS5neGSqSfTtqjLrq/I+Uev8kCuFX/kCcwo4dXScRZe7nytnhBTZAKagZhsMvq
